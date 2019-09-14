@@ -45,8 +45,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
@@ -219,9 +219,36 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
 </nav>
+  <div class="site-search">
+    
+  <div class="popup search-popup">
+  <div class="search-header">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="search-input">
+    </div>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+  <div id="search-result"></div>
+</div>
+
+
+  </div>
 </div>
     </header>
 
@@ -243,7 +270,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/30/祛痘/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/video/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈某某">
@@ -257,7 +284,119 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/07/30/祛痘/" class="post-title-link" itemprop="url">痘痘总结</a>
+            <a href="/uncategorized/video/" class="post-title-link" itemprop="url">video</a>
+          
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              
+                
+              
+
+              <time title="创建时间：2019-09-14 16:10:36 / 修改时间：16:10:57" itemprop="dateCreated datePublished" datetime="2019-09-14T16:10:36+08:00">2019-09-14</time>
+            </span>
+          
+            
+
+            
+          
+
+          
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="fa fa-comment-o"></i>
+      </span>
+        
+      
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/uncategorized/video/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/uncategorized/video/" itemprop="commentCount"></span></a>
+  </span>
+  
+  
+          <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-file-word-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">本文字数：</span>
+              
+              <span>39</span>
+            </span>
+          
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-clock-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              
+              <span>1 分钟</span>
+            </span>
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>我怕我只是你生命中的一盏灯，掩盖了上一人，照亮了下一人，一盏灯，幸福而愚蠢！：</p>
+<iframe height="498" width="510" src="http://player.youku.com/embed/XMjg3ODQzMjQ=" frameborder="0" allowfullscreen>
+</iframe>
+
+        
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+          <div class="post-eof"></div>
+        
+      </footer>
+  </div>
+  
+  
+  
+  </article>
+
+    
+      
+
+  <article class="post" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/护肤/祛痘/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="沈某某">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="卑微到尘埃里<br/>挣脱着开出花">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+            
+            <a href="/护肤/祛痘/" class="post-title-link" itemprop="url">痘痘总结</a>
           
         </h1>
 
@@ -312,7 +451,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/07/30/祛痘/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/07/30/祛痘/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/护肤/祛痘/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/护肤/祛痘/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -351,7 +490,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/30/祛痘/#more" rel="contents">
+              <a class="btn" href="/护肤/祛痘/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -382,7 +521,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/24/荣耀9X评测/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/机你太美/荣耀9X评测/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈某某">
@@ -396,7 +535,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/07/24/荣耀9X评测/" class="post-title-link" itemprop="url">荣耀9X评测</a>
+            <a href="/机你太美/荣耀9X评测/" class="post-title-link" itemprop="url">荣耀9X评测</a>
           
         </h1>
 
@@ -451,7 +590,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/07/24/荣耀9X评测/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/07/24/荣耀9X评测/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/机你太美/荣耀9X评测/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/机你太美/荣耀9X评测/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -487,8 +626,8 @@
 
       
           <p>10W快充了解一下<br>图片转自XYZone楼先生，如有侵权，请联系我尽快删除</p>
-<img src="/2019/07/24/荣耀9X评测/荣耀9X.jpg" title="网卡了吗？">
-<img src="/2019/07/24/荣耀9X评测/荣耀9Xpro.jpg" title="网卡了吗？">
+<img src="/.com//荣耀9X评测/荣耀9X.jpg" title="网卡了吗？">
+<img src="/.com//荣耀9X评测/荣耀9Xpro.jpg" title="网卡了吗？">
 
 
         
@@ -516,7 +655,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/21/线性马达和转子马达/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/uncategorized/线性马达和转子马达/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="沈某某">
@@ -530,7 +669,7 @@
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
             
-            <a href="/2019/07/21/线性马达和转子马达/" class="post-title-link" itemprop="url">线性马达和转子马达</a>
+            <a href="/uncategorized/线性马达和转子马达/" class="post-title-link" itemprop="url">线性马达和转子马达</a>
           
         </h1>
 
@@ -572,7 +711,7 @@
       
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2019/07/21/线性马达和转子马达/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/2019/07/21/线性马达和转子马达/" itemprop="commentCount"></span></a>
+    <a title="valine" href="/uncategorized/线性马达和转子马达/#comments" itemprop="discussionUrl"><span class="post-comments-count valine-comment-count" data-xid="/uncategorized/线性马达和转子马达/" itemprop="commentCount"></span></a>
   </span>
   
   
@@ -611,7 +750,7 @@
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/07/21/线性马达和转子马达/#more" rel="contents">
+              <a class="btn" href="/uncategorized/线性马达和转子马达/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -672,7 +811,7 @@
         
           <a href="/archives/">
         
-          <span class="site-state-item-count">3</span>
+          <span class="site-state-item-count">4</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -881,6 +1020,8 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
 
 
 

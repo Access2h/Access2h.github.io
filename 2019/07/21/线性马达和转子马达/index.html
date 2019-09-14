@@ -45,8 +45,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
@@ -72,12 +72,12 @@
 <meta property="og:site_name" content="卑微到尘埃里&lt;br&#x2F;&gt;挣脱着开出花">
 <meta property="og:description" content="马达从结构上可以分为转子马达和线性马达俩大类。转子马达利用电磁感性的原理，电流导致的磁场驱动转子旋转的震动。  优点成本低缺点启动反应慢，没有方向性，震感不足，占用空间大线性马达依靠线性形式运动的弹簧质量块，将电能直接转换为直线运动机械能的发动模块。优点占用空间小，能量损耗小，震感强分类线性马达还可以分为横向线性马达和圆形线性马达俩类，横向线性马达除了震动以外还可以带来前后左右四个方向的位移感，而">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/07/21/线性马达和转子马达/线性马达和转子马达.jpeg">
+<meta property="og:image" content="http://yoursite.com/.com//07/21/线性马达和转子马达/线性马达和转子马达.jpeg">
 <meta property="og:updated_time" content="2019-09-12T16:24:41.989Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="线性马达和转子马达">
 <meta name="twitter:description" content="马达从结构上可以分为转子马达和线性马达俩大类。转子马达利用电磁感性的原理，电流导致的磁场驱动转子旋转的震动。  优点成本低缺点启动反应慢，没有方向性，震感不足，占用空间大线性马达依靠线性形式运动的弹簧质量块，将电能直接转换为直线运动机械能的发动模块。优点占用空间小，能量损耗小，震感强分类线性马达还可以分为横向线性马达和圆形线性马达俩类，横向线性马达除了震动以外还可以带来前后左右四个方向的位移感，而">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/21/线性马达和转子马达/线性马达和转子马达.jpeg">
+<meta name="twitter:image" content="http://yoursite.com/.com//07/21/线性马达和转子马达/线性马达和转子马达.jpeg">
   <link rel="alternate" href="/atom.xml" title="卑微到尘埃里<br/>挣脱着开出花" type="application/atom+xml">
   <link rel="canonical" href="http://yoursite.com/2019/07/21/线性马达和转子马达/">
 
@@ -225,9 +225,36 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
 </nav>
+  <div class="site-search">
+    
+  <div class="popup search-popup">
+  <div class="search-header">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="search-input">
+    </div>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+  <div id="search-result"></div>
+</div>
+
+
+  </div>
 </div>
     </header>
 
@@ -348,7 +375,7 @@
 
 
 <h2 id="价格"><a href="#价格" class="headerlink" title="价格"></a>价格</h2><p>转子马达成本大约<strong>1</strong>美元，横向线性马达大约<strong>8~10</strong>美元，圆形线性马达大约<strong>5</strong>美元</p>
-<img src="/2019/07/21/线性马达和转子马达/线性马达和转子马达.jpeg">
+<img src="/.com//07/21/线性马达和转子马达/线性马达和转子马达.jpeg">
     </div>
 
     
@@ -658,6 +685,8 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
 
 
 

@@ -45,8 +45,8 @@
       hits: {"per_page":10},
       labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
     },
-    localsearch: {"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
-    path: '',
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
     motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
     translation: {
       copy_button: '复制',
@@ -72,13 +72,13 @@
 <meta property="og:site_name" content="卑微到尘埃里&lt;br&#x2F;&gt;挣脱着开出花">
 <meta property="og:description" content="10W快充了解一下图片转自XYZone楼先生，如有侵权，请联系我尽快删除">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/07/24/荣耀9X评测/荣耀9X.jpg">
-<meta property="og:image" content="http://yoursite.com/2019/07/24/荣耀9X评测/荣耀9Xpro.jpg">
+<meta property="og:image" content="http://yoursite.com/.com//07/24/荣耀9X评测/荣耀9X.jpg">
+<meta property="og:image" content="http://yoursite.com/.com//07/24/荣耀9X评测/荣耀9Xpro.jpg">
 <meta property="og:updated_time" content="2019-09-12T16:16:44.960Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="荣耀9X评测">
 <meta name="twitter:description" content="10W快充了解一下图片转自XYZone楼先生，如有侵权，请联系我尽快删除">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/24/荣耀9X评测/荣耀9X.jpg">
+<meta name="twitter:image" content="http://yoursite.com/.com//07/24/荣耀9X评测/荣耀9X.jpg">
   <link rel="alternate" href="/atom.xml" title="卑微到尘埃里<br/>挣脱着开出花" type="application/atom+xml">
   <link rel="canonical" href="http://yoursite.com/2019/07/24/荣耀9X评测/">
 
@@ -226,9 +226,36 @@
     <a href="/archives/" rel="section"><i class="menu-item-icon fa fa-fw fa-archive"></i> <br>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a href="javascript:;" class="popup-trigger">
+        
+          <i class="menu-item-icon fa fa-search fa-fw"></i> <br>搜索</a>
+      </li>
+    
   </ul>
 
 </nav>
+  <div class="site-search">
+    
+  <div class="popup search-popup">
+  <div class="search-header">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <div class="search-input-wrapper">
+      <input autocomplete="off" autocorrect="off" autocapitalize="none"
+             placeholder="搜索..." spellcheck="false"
+             type="text" id="search-input">
+    </div>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+  <div id="search-result"></div>
+</div>
+
+
+  </div>
 </div>
     </header>
 
@@ -355,8 +382,8 @@
 
       
         <p>10W快充了解一下<br>图片转自XYZone楼先生，如有侵权，请联系我尽快删除</p>
-<img src="/2019/07/24/荣耀9X评测/荣耀9X.jpg" title="网卡了吗？">
-<img src="/2019/07/24/荣耀9X评测/荣耀9Xpro.jpg" title="网卡了吗？">
+<img src="/.com//07/24/荣耀9X评测/荣耀9X.jpg" title="网卡了吗？">
+<img src="/.com//07/24/荣耀9X评测/荣耀9Xpro.jpg" title="网卡了吗？">
 
 
     </div>
@@ -646,6 +673,8 @@ setInterval("createtime()",250);
 
 
 
+
+  <script src="/js/local-search.js?v=7.3.0"></script>
 
 
 
